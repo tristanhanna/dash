@@ -20,10 +20,7 @@ export default function Projects() {
         <Anime scale={[0, 1]} delay={300}>
         <h1 className="heading">projects</h1>
         </Anime>
-        <Anime scale={[0, 1]} delay={700}>
-        <p className="description">a collection of my fun projects</p>
-        </Anime>
-        <Anime scale={[0,1]} translateX={[-1000,0]} duration={4000} delay={1100}>
+        <Anime scale={[0,1]} translateX={[-1000,0]} duration={4000} delay={800}>
         <div className="grid">
           <a href="https://vimeo.com/409891546" className="card">
             <h3>Future Motion</h3>

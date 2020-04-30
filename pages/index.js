@@ -10,7 +10,7 @@ export default function Home() {
       <div className="container">
       <Head>
         <title>Tristan Hanna</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <style>
                     @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');

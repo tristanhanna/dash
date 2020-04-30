@@ -92,6 +92,10 @@ export default function Home() {
         </div>
         </Anime>
       </main>
+        <footer>
+            <p>tristan.hanna@colorado.edu</p>
+            <img src="/next.png" height="35" />
+        </footer>
       <style jsx>{`
         
         .container {
@@ -110,18 +114,15 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-            color: #270949;
-            font-family: 'Comfortaa', cursive;
+          color: #270949;
+          font-family: 'Comfortaa', cursive;
         }
 
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
+        footer {
+          width: 100%;
+          height: 50px;
           display: flex;
-          justify-content: center;
-          align-items: center;
+          justify-content: space-around;
         }
 
         .firstName{

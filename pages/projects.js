@@ -17,8 +17,13 @@ export default function Projects() {
         </style>
 
       <main>
+        <Anime scale={[0, 1]} delay={300}>
         <h1 className="heading">projects</h1>
+        </Anime>
+        <Anime scale={[0, 1]} delay={700}>
         <p className="description">a collection of my fun projects</p>
+        </Anime>
+        <Anime scale={[0,1]} translateX={[-1000,0]} duration={4000} delay={1100}>
         <div className="grid">
           <a href="https://vimeo.com/409891546" className="card">
             <h3>Future Motion</h3>
@@ -36,7 +41,7 @@ export default function Projects() {
             <p>Old school runner game using Phaser and Firebase.</p>
           </a>
 
-          <a href="#"
+          <a href="https://color-theta.now.sh/"
             className="card">
             <h3>Pixel Board</h3>
             <p>
@@ -58,7 +63,12 @@ export default function Projects() {
                 </p>
               </a>
         </div>
+        </Anime>
       </main>
+        <footer>
+            <p>tristan.hanna@colorado.edu</p>
+            <img src="/next.png" height="35" />
+        </footer>
       <style jsx>{`
         
         .container {
@@ -84,21 +94,10 @@ export default function Projects() {
 
         footer {
           width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
+          height: 50px;
           display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          justify-content: space-around;
+          align-items:center;
         }
 
         .heading{

@@ -17,8 +17,13 @@ export default function Tools() {
         </style>
 
       <main>
+        <Anime scale={[0, 1]} delay={300}>
         <h1 className="heading">tools</h1>
+        </Anime>
+        <Anime scale={[0, 1]} delay={700}>
         <p className="description">my favorite web dev tools</p>
+        </Anime>
+        <Anime scale={[0,1]} translateX={[1000,0]} duration={4000} delay={1100}>
         <div className="grid">
           <a href="https://nextjs.org/" className="card">
             <img src="/next.png" height="60"/>
@@ -75,7 +80,12 @@ export default function Tools() {
                 <img src="/leap.png" height="60"/>
           </a>
         </div>
+        </Anime>
       </main>
+        <footer>
+            <p>tristan.hanna@colorado.edu</p>
+            <img src="/next.png" height="35" />
+        </footer>
       <style jsx>{`
         
         .container {
@@ -101,21 +111,9 @@ export default function Tools() {
 
         footer {
           width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
+          height: 50px;
           display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          justify-content: space-around;
         }
 
         .styleAnime{

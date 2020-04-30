@@ -200,6 +200,7 @@ export default function Tools() {
           margin: 0;
             background:url("/bgBlack.jpg");
             background-attachment:fixed;
+            background-size:cover;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;

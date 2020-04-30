@@ -162,6 +162,12 @@ export default function Projects() {
             width: 100%;
             flex-direction: column;
           }
+            .heading{
+                font-size:3em;
+            }
+            .description{
+                font-size:1em;
+            }
         }
       `}</style>
 
@@ -172,6 +178,7 @@ export default function Projects() {
           margin: 0;
             background:url("/bgWhite.jpg");
             background-attachment:fixed;
+          background-size:cover;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;

@@ -205,6 +205,12 @@ export default function Home() {
             width: 100%;
             flex-direction: column;
           }
+            .t{
+                font-size:2.5em;
+            }
+            .description{
+                font-size:1rem;
+            }
         }
       `}</style>
 
@@ -214,6 +220,8 @@ export default function Home() {
           padding: 0;
           margin: 0;
             background: url("/bgRed.jpg");
+            background-attachment:fixed;
+            background-size:cover;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;

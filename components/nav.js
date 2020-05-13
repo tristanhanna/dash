@@ -17,9 +17,6 @@ export default function Nav() {
       <Link href="https://github.com/tristanhanna">
         <a className="linker">github</a>
       </Link>
-      <Link href="https://tristanhanna.myportfolio.com/">
-        <a className="linker">portfolio</a>
-      </Link>
       <style jsx>{`
         .bar{
             width:100%;

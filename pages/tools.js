@@ -23,7 +23,7 @@ export default function Tools() {
         <Anime scale={[0, 1]} delay={700}>
         <p className="description">my favorite web dev tools</p>
         </Anime>
-        <Anime scale={[0,1]} translateX={[1000,0]} duration={4000} delay={1100}>
+        <Anime scale={[0,1]} translateX={[200,0]} duration={4000} delay={1100}>
         <div className="grid">
           <a href="https://nextjs.org/" className="card">
             <img src="/next.png" height="60"/>
@@ -83,8 +83,8 @@ export default function Tools() {
         </Anime>
       </main>
         <footer>
-            <p>tristan.hanna@colorado.edu</p>
-            <img src="/next.png" height="35" />
+            <a href="https://www.linkedin.com/in/tristan-hanna-9100a1156/"><img src="/linkedin.png" height="35" /></a>
+            <a href="https://nextjs.org/"><img src="/next.png" height="35" /></a>
         </footer>
       <style jsx>{`
         
@@ -110,7 +110,7 @@ export default function Tools() {
         }
 
         footer {
-          width: 100%;
+          width: 40%;
           height: 50px;
           display: flex;
           justify-content: space-around;

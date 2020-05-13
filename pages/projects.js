@@ -20,7 +20,7 @@ export default function Projects() {
         <Anime scale={[0, 1]} delay={300}>
         <h1 className="heading">projects</h1>
         </Anime>
-        <Anime scale={[0,1]} translateX={[-1000,0]} duration={4000} delay={800}>
+        <Anime scale={[0,1]} translateX={[-200,0]} duration={4000} delay={800}>
         <div className="grid">
           <a href="https://vimeo.com/409891546" className="card">
             <h3>Future Motion</h3>
@@ -56,15 +56,29 @@ export default function Projects() {
                 className="card">
                 <h3>Github</h3>
                 <p>
-                  My Github has projects that are more backend focused.
+                  My Github has all my projects on it.
+                </p>
+              </a>
+            <a href="https://creative.colorado.edu/~trha0779/FWD/"
+                className="card">
+                <h3>Front-End Class</h3>
+                <p>
+                  Landing page for one of my frontend classes.
+                </p>
+              </a>
+            <a href="https://www.youtube.com/watch?v=e6AplVvQORA&feature=emb_title"
+                className="card">
+                <h3>Easy Life Fridge</h3>
+                <p>
+                  UI/UX project for my human-machine interaction class.
                 </p>
               </a>
         </div>
         </Anime>
       </main>
         <footer>
-            <p>tristan.hanna@colorado.edu</p>
-            <img src="/next.png" height="35" />
+            <a href="https://www.linkedin.com/in/tristan-hanna-9100a1156/"><img src="/linkedin.png" height="35" /></a>
+            <a href="https://nextjs.org/"><img src="/next.png" height="35" /></a>
         </footer>
       <style jsx>{`
         
@@ -90,7 +104,7 @@ export default function Projects() {
         }
 
         footer {
-          width: 100%;
+          width: 40%;
           height: 50px;
           display: flex;
           justify-content: space-around;

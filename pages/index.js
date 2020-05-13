@@ -19,55 +19,55 @@ export default function Home() {
       <div className="top">
           <div className="styleAnime">
           <div className="firstName">
-            <Anime scale={[0, 1]} translateX={[-1000,0]} translateY={[1000,0]} delay={100}>
+            <Anime scale={[0, 1]} translateX={[-100,0]} translateY={[100,0]} delay={10}>
                 <div className="t">t</div>
             </Anime>
-            <Anime scale={[0, 1]} translateX={[1000,0]} translateY={[-1000,0]} delay={400}>
+            <Anime scale={[0, 1]} translateX={[100,0]} translateY={[-100,0]} delay={200}>
                 <div className="t">r</div>
             </Anime>
-            <Anime scale={[0, 1]} translateX={[-1000,0]} translateY={[1000,0]} delay={700}>
+            <Anime scale={[0, 1]} translateX={[-100,0]} translateY={[100,0]} delay={400}>
                 <div className="t">i</div>
             </Anime>
-            <Anime scale={[0, 1]} translateX={[1000,0]} translateY={[-1000,0]} delay={1000}>
+            <Anime scale={[0, 1]} translateX={[100,0]} translateY={[-100,0]} delay={600}>
                 <div className="t">s</div>
             </Anime>
-            <Anime scale={[0, 1]} translateX={[-1000,0]} translateY={[1000,0]} delay={1300}>
+            <Anime scale={[0, 1]} translateX={[-100,0]} translateY={[100,0]} delay={800}>
                 <div className="t">t</div>
             </Anime>
-            <Anime scale={[0, 1]} translateX={[1000,0]} translateY={[-1000,0]} delay={1600}>
+            <Anime scale={[0, 1]} translateX={[100,0]} translateY={[-100,0]} delay={1000}>
                 <div className="t">a</div>
             </Anime>
-            <Anime scale={[0, 1]} translateX={[-1000,0]} translateY={[1000,0]} delay={1900}>
+            <Anime scale={[0, 1]} translateX={[-100,0]} translateY={[100,0]} delay={1200}>
                 <div className="t">n</div>
             </Anime>
         </div>
         <div className="lastName">
-            <Anime scale={[0, 1]} translateX={[1000,0]} translateY={[-1000,0]} delay={2200}>
+            <Anime scale={[0, 1]} translateX={[100,0]} translateY={[-100,0]} delay={1400}>
                 <div className="t">h</div>
             </Anime>
-            <Anime scale={[0, 1]} translateX={[-1000,0]} translateY={[1000,0]} delay={2500}>
+            <Anime scale={[0, 1]} translateX={[-100,0]} translateY={[100,0]} delay={1600}>
                 <div className="t">a</div>
             </Anime>
-            <Anime scale={[0, 1]} translateX={[1000,0]} translateY={[-1000,0]} delay={2800}>
+            <Anime scale={[0, 1]} translateX={[100,0]} translateY={[-100,0]} delay={1800}>
                 <div className="t">n</div>
             </Anime>
-            <Anime scale={[0, 1]} translateX={[-1000,0]} translateY={[1000,0]} delay={3100}>
+            <Anime scale={[0, 1]} translateX={[-100,0]} translateY={[100,0]} delay={2000}>
                 <div className="t">n</div>
             </Anime>
-            <Anime scale={[0, 1]} translateX={[1000,0]} translateY={[-1000,0]} delay={3400}>
+            <Anime scale={[0, 1]} translateX={[100,0]} translateY={[-100,0]} delay={2200}>
                 <div className="t">a</div>
             </Anime>
         </div>
         </div>
         <div className="descTag">
-        <Anime scale={[0, 1]} delay={3700}>
+        <Anime scale={[0, 1]} delay={2400}>
         <p className="description">
-          my web development adventure
+          web development
         </p>
         </Anime>
         </div>
       </div>
-        <Anime scale={[0, 1]} delay={4000} duration={3000}>
+        <Anime scale={[0, 1]} delay={2600} duration={3000}>
         <div className="grid">
             <a href="/projects" className="card">
             <img src="/projects1.png" className="imgStyle" onMouseOver={e => (e.currentTarget.src = "/projects2.png")} onMouseOut={e => (e.currentTarget.src = "/projects1.png")}/>
@@ -84,17 +84,12 @@ export default function Home() {
                 <br/>
               <h3>github</h3>
             </a>
-            <a href="https://tristanhanna.myportfolio.com/" className="card">
-            <img src="/port1.png" className="imgStyle" onMouseOver={e => (e.currentTarget.src = "/port2.png")} onMouseOut={e => (e.currentTarget.src = "/port1.png")}/>
-                <br/>
-              <h3>portfolio</h3>
-            </a>
         </div>
         </Anime>
       </main>
         <footer>
-            <p>tristan.hanna@colorado.edu</p>
-            <img src="/next.png" height="35" />
+            <a href="https://www.linkedin.com/in/tristan-hanna-9100a1156/"><img src="/linkedin.png" height="35" /></a>
+            <a href="https://nextjs.org/"><img src="/next.png" height="35" /></a>
         </footer>
       <style jsx>{`
         
@@ -119,7 +114,7 @@ export default function Home() {
         }
 
         footer {
-          width: 100%;
+            width: 40%;
           height: 50px;
           display: flex;
           justify-content: space-around;
@@ -166,11 +161,14 @@ export default function Home() {
         .grid {
           display: flex;
           flex-direction:row;
+            justify-content:space-around;
+            justify-content:center;
           margin-top: 3rem;
         }
 
         .card {
           margin: 1rem;
+            width: 300px;
             background:rgba(0,0,0,.1);
           flex-basis: 25%;
           padding: 1.5rem;
@@ -200,7 +198,7 @@ export default function Home() {
           line-height: 1.5;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 900px) {
           .grid {
             width: 100%;
             flex-direction: column;
